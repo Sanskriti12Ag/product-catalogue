@@ -1,16 +1,80 @@
-# React + Vite
+# Goods. — Product Catalogue
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive product catalogue built with React and Vite using the DummyJSON Products API. Search, filter, and sort products through a clean, responsive interface.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Website:** https://product-catalogue-pied.vercel.app
 
-## React Compiler
+**GitHub Repository:** https://github.com/Sanskriti12Ag/product-catalogue
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Fetches products from the DummyJSON API
+- Search products by name (case-insensitive)
+- Filter by product category
+- Filter by minimum and maximum price
+- Sort by price: low to high and high to low
+- Sort by rating: high to low and low to high
+- Loading and error states
+- Empty state when no products match
+- Responsive design for desktop, tablet, and mobile
+- Product cards showing images, descriptions, categories, prices, and ratings
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Tech Stack
+
+- React
+- JavaScript
+- Vite
+- CSS
+- DummyJSON Products API
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Sanskriti12Ag/product-catalogue.git
+cd product-catalogue
+npm install
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## API
+
+Product data is fetched from:
+
+https://dummyjson.com/products?limit=0
+
+## Project Structure
+
+```text
+product-catalogue/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+```
+
+## Future Improvements
+
+- Pagination or infinite scrolling
+- Product detail pages
+- Automated tests
+
+## Author
+
+Sanskriti Agarwal
